@@ -5,16 +5,13 @@
  */
 int main(void)
 {
-	int i, z = 0;
+	int i, sum = 0;
 
-	while (i < 1024)
+	for (i = 0; i < 1024; i++)
 	{
-	if ((i % 3 == 0) || (i % 5 == 0))
-	{
-	z += i;
+	if ((i % 3) == 0 || (i % 5) == 0)
+	sum += i;
 	}
-	i++
-	}
-	printf("%d\n", z);
+	printf("%d\n", sum);
 	return (0);
 }
